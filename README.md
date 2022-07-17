@@ -11,6 +11,8 @@ https://www.youtube.com/channel/UCjkECP_YgfCXd6Y3j3rkY_g
 
 There is a dependency on Unity's Vector2Int class. Use an alternative in other engines. For Godot it's [Vector2i](https://github.com/godotengine/godot/blob/master/modules/mono/glue/GodotSharp/GodotSharp/Core/Vector2i.cs)
 
+Godot doesn't support playing animation by it's hashed name therefore `int animationNameHash` has to be replaced with `string animationName`.
+
 ## Usage
 
 ### Setup
