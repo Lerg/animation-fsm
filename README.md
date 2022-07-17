@@ -1,4 +1,4 @@
-# Animation FSM
+# Priority based Animation FSM
 Animation system for Unity or other C# game engines like Godot.
 
 It's based on a simple Finite State Machine. All states are organizied in a priority queue, basically an array of states with the first state having the highest priority.
