@@ -1,19 +1,23 @@
 # Priority based Animation FSM
-Animation system for Unity or other C# game engines like Godot.
+Animation system for Unity, Godot or other C# game engines.
 
 It's based on a simple Finite State Machine. All states are organizied in a priority queue, basically an array of states with the first state having the highest priority.
 
 You can watch video description on my YouTube channel
 
-https://www.youtube.com/channel/UCjkECP_YgfCXd6Y3j3rkY_g
+https://www.youtube.com/watch?v=pA67Sb2nPcQ
 
-## Porting to Godot or other C# engine
+And see how it's used inside Godot
+http://www.youtube.com/channel/UCjkECP_YgfCXd6Y3j3rkY_g
 
-There is a dependency on Unity's Vector2Int class. Use an alternative in other engines. For Godot it's [Vector2i](https://github.com/godotengine/godot/blob/master/modules/mono/glue/GodotSharp/GodotSharp/Core/Vector2i.cs)
+## Godot version
 
-Godot doesn't support playing animation by it's hashed name therefore `int animationNameHash` has to be replaced with `string animationName`.
+For Godot version below 4.0 use this vector class [Vector2i](https://github.com/godotengine/godot/blob/master/modules/mono/glue/GodotSharp/GodotSharp/Core/Vector2i.cs)
+Just copy it into your source code directory.
 
 ## Usage
+
+Usage is slightly different for the Godot version. See my platformer template for reference.
 
 ### Setup
 
